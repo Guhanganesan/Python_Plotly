@@ -1,5 +1,7 @@
 # Python_Plotly Setup
 1. pip install dash
+2. pip install jupyter-dash
+3. pip install pandas
 
 
 # Run 

@@ -1,6 +1,12 @@
-from dash import Dash, dcc, html, Input, Output
+import dash 
+import dash_core_components as dcc
+import dash_html_components as html 
+import pandas as pd
+import plotly.express as px
+from dash.dependencies import Input, Output
 
-app = Dash(__name__)
+
+app = dash.Dash(__name__)
 
 app.layout = html.Div([
     html.H3("Change the value in the text box to see callbacks in action!"),
