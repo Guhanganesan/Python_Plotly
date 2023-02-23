@@ -44,7 +44,14 @@ app.layout = html.Div(
             'color':'white',
             'background-color':'green',
             'text-align':'center'
-        }),
+        },
+        style_data_conditional=[{ # list of dict
+            'if':{
+                'column_id':'State'
+                },
+            'background-color':'gray'
+        }]
+        ),
 
         # Display Result Here
         html.Div(
