@@ -25,8 +25,25 @@ app.layout = html.Div([
                 local, customized CSS.
             '''])
         ])
-    )
+    ),
+    html.Div([
+        html.Img(
+            src='./assets/images/test.jpg',
+            style={
+                'border':'3px solid blue',
+                'padding':'3px'
+            }
+        )
+    ])
 ])
+
+"""
+Allowed arguments (Img): 
+accessKey, alt, aria-*, children, className, contentEditable, contextMenu, crossOrigin, 
+data-*, dir, disable_n_clicks, draggable, height, hidden, id, key, lang, loading_state, 
+n_clicks, n_clicks_timestamp, referrerPolicy, role, sizes, spellCheck, src, srcSet, style, 
+tabIndex, title, useMap, width
+"""
 
 if __name__ == '__main__':
     app.run_server(debug=True)
