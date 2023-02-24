@@ -8,7 +8,7 @@ app = dash.Dash(__name__)
 PAGE_SIZE = 8    
 
 app.layout = html.Div([    
-    html.Div('Data table pagination test'),    
+    # html.Div('Data table pagination test'),    
     html.Div(dash_table.DataTable(    
         id='datatable-paging',    
         columns=[{"name": i, "id": i} for i in df.columns],    
@@ -16,11 +16,17 @@ app.layout = html.Div([
         page_size=PAGE_SIZE,    
         page_current=0,
         style_data={
-            'color':'red',
-            'overflow-y':'auto'
-        }    
+            'color':'red'
+        },
+        style_table={
+            'overflowX':'scroll'
+        },
     ))    
-])        
+],
+ style={
+            'width':'500px'
+        }
+)        
 
     
 if __name__ == '__main__':    
