@@ -14,9 +14,10 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 
 """
-Allowed arguments: active_cell, cell_selectable, column_selectable, columns, css, data, 
-data_previous, data_timestamp, derived_filter_query_structure, derived_viewport_data, 
-derived_viewport_indices, derived_viewport_row_ids, 
+Allowed arguments: 
+active_cell, cell_selectable, column_selectable, columns, css, data, 
+data_previous, data_timestamp, derived_filter_query_structure, 
+derived_viewport_data, derived_viewport_indices, derived_viewport_row_ids, 
 derived_viewport_selected_columns, derived_viewport_selected_row_ids, 
 derived_viewport_selected_rows, derived_virtual_data, derived_virtual_indices, 
 derived_virtual_row_ids, derived_virtual_selected_row_ids, derived_virtual_selected_rows, 
