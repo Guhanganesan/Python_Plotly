@@ -113,10 +113,26 @@ app.layout = dbc.Container([
         ],
         width={'size':5, 'offset':0},
         style={"justify":"start"},
-    )
+        ),
 
-
-    ])
+         dbc.Col([
+            dbc.Card(
+                [
+                    dbc.CardBody(
+                        html.P(
+                            "We're better together. Help each other out!",
+                            className="card-text")
+                    ),
+                    dbc.CardImg(
+                        src="https://media.giphy.com/media/Ll0jnPa6IS8eI/giphy.gif",
+                        bottom=True),
+                ],
+                style={"width": "24rem"},
+            )
+        ], #width={'size':5, 'offset':1},
+           xs=12, sm=12, md=12, lg=5, xl=5
+        )
+    ], align="center")  # Vertical: start, center, end
 
 ],
 className="bg-light",
